@@ -76,7 +76,7 @@ public class Cipher {
 		if (num5 > 19) {
 			System.out.println(error);
 			System.exit(0);}
-		else if (num5 <0) {
+		if (num5 <0) {
 			System.out.println(error);
 			System.exit(0);}
 		
@@ -93,13 +93,19 @@ public class Cipher {
 		
 //Perform modulo shift		
 		
-		cipherHold1 = (total - (total % 10));
+		cipherHold1 = (total - (total % 10)) / 10;
 		cipherHold2 = total % 10;
 		finalCipher = (((cipherHold1 + key) % 10) * 10) + ((cipherHold2 +key) % 10 );
-		
+				
 //Convert encoded number finalCipher to int from float		
 		int finalCipherWhole = (int) finalCipher;
-			System.out.println("Your encoded number is " + finalCipherWhole);
+			
+//Conditional to ensure 2 digit encoded number		
+		
+		if (finalCipherWhole >= 10) {
+		System.out.println("Your encoded number is " + finalCipherWhole);}
+		if (finalCipherWhole < 10) {
+		System.out.println("Your encoded number is 0" + finalCipherWhole);}
 		
 		
 	}
