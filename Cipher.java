@@ -36,7 +36,7 @@ public class Cipher {
 		if (num1 > 19) {
 			System.out.println(error);
 			System.exit(0);}
-		if (num1 <0) {
+		if (num1 < 0) {
 			System.out.println(error);
 			System.exit(0);}
 
@@ -46,7 +46,7 @@ public class Cipher {
 		if (num2 > 19) {
 			System.out.println(error);
 			System.exit(0);}
-		if (num2 <0) {
+		if (num2 < 0) {
 			System.out.println(error);
 			System.exit(0);}
 		
@@ -56,7 +56,7 @@ public class Cipher {
 		if (num3 > 19) {
 			System.out.println(error);
 			System.exit(0);}
-		if (num3 <0) {
+		if (num3 < 0) {
 			System.out.println(error);
 			System.exit(0);}
 		
@@ -66,7 +66,7 @@ public class Cipher {
 		if (num4 > 19) {
 			System.out.println(error);
 			System.exit(0);}
-		if (num4 <0) {
+		if (num4 < 0) {
 			System.out.println(error);
 			System.exit(0);}
 		
@@ -76,7 +76,7 @@ public class Cipher {
 		if (num5 > 19) {
 			System.out.println(error);
 			System.exit(0);}
-		else if (num5 <0) {
+		if (num5 < 0) {
 			System.out.println(error);
 			System.exit(0);}
 		
