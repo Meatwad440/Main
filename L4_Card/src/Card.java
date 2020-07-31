@@ -41,7 +41,7 @@ public class Card {
 	public static void main(String[] args) {
 
 		String[] suits = { "Spade", "Club", "Heart", "Diamond" };
-		String[] faceValues = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"};
+		String[] faceValues = { "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
 
 	//Selection of random card
 		
