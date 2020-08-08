@@ -8,19 +8,18 @@ public class NumberScanner {
 
 	public static void main(String[] args) {
 	
-		// Using try catch to see if file opens correctly
+		
 				try {
-					//Opening File input.csv
+					//Open file
 					File f = new File("input.csv");
 					Scanner scanFile = new Scanner(f);
 					
-					// Creating variables
+					
 					String[] maxValues = null;
 					String line;
 					int row = 1;
 					
-					// Reading each line from the .cvs file
-					// and getting max values from each line
+					//Read and evaluate each line
 					while (scanFile.hasNext()) {
 						line = scanFile.nextLine();
 						maxValues = line.split(",");
